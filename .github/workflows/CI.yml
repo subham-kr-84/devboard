@@ -22,7 +22,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: ./frontend
-          file: ./frontend/dockerfile
+          file: ./frontend/Dockerfile
           push: true
           tags: ${{ vars.docker_username }}/devboard-fe-master:latest
           
